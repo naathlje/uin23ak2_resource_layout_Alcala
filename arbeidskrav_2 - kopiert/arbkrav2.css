@@ -3,14 +3,137 @@
 :root{
     --blue:#25DFE6;
     --white:#ffffff;
+    --grey: #B7B7B7;
     --maxwidth: 1200px;
-    --abcsize: 20px;
+    --abcsize1: 30px;
+    --abcsize2: 18px;
+    --abcfarge:#707070;
+    --boldfarge:#575757;
 
 
     
 }
 
 body {
-    background-color: var(--white) ;
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
+    padding-top:0;
+    padding-bottom: 0;
+    margin-top:0;
+    margin-bottom: 0;
+    font-size: var(--abcsize2);
 }
+
+div.hele{
+    width: 100%;
+    max-width: var(--maxwidth);
+    position:relative;
+    overflow: hidden;
+    margin: 1rem auto;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    padding: 2rem ;
+    max-width: var(--maxwidth);
+    justify-content: left;
+}
+
+header h1{
+    color: var(--boldfarge);
+    border-color: var(--grey);
+    padding: 20px ;
+    border: solid var(--grey);
+    text-transform: uppercase;
+}
+
+#faner {
+    display: flex;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: var(--abcsize1);
+    padding-bottom: 0%;
+    font-weight: lighter;
+
+}
+
+#faner span {
+    border: 1px solid var(--grey);
+    border-color:var(--grey) ;
+    padding: 10px 5px;
+    text-decoration: none;
+    background-color: lightgray;
+    overflow: hidden;
+
+
+}
+#faner p {
+    padding: 0%;
+
+
+}
+
+#faner span:hover{
+    background-color: var(--blue);
+    transition: .2s;
+}
+#faner span:active{
+    background-color: var(--blue);
+    box-shadow: var(--blue);
+}
+
+#faner span:visited{
+    text-decoration: none;
+}
+
+
+#innholds_artikkler  {
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    border-color: var(--grey);
+    padding: 20px ;
+    border:  1px solid var(--grey);
+
+}
+#innholds_artikkler h2{
+    color: var(--boldfarge);
+
+}
+
+#innholds_artikkler p {
+    color: var(--abcfarge)
+}
+
+#innholds_artikkler ul li a {
+    color: var(--blue);
+
+}
+
+.hidden{
+    visibility: hidden;
+    
+}
+
+
+
+
+
+
+
+
+
+/*.kategori:active {
+/*    background-color:var(--blue);
+/*    border-color: var(--blue);
+/*    color: var(--white);
+/*}
+/*nav a .active:hover {
+/*    color: var(--blue);
+/*}
+/*nav a:visited{
+/*    color: var(--grey);
+/*}
